@@ -4,6 +4,7 @@
   "description": "Berber randevu sistemi",
   "main": "server.js",
   "scripts": {
+    "build": "npm install",
     "start": "node server.js"
   },
   "dependencies": {
