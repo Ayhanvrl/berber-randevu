@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berber Randevu Sistemi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">Kolay Randevu</div>
+      <div class="top-links">
+        <span>Salonlar</span>
+        <span>Saç</span>
+        <span>İşletmeler İçin</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="content">
+      <div class="booking-area">
+        <div class="salon-title">Kendirli Hair Salon</div>
+
+        <div class="step-block">
+          <div class="step-no">1</div>
+          <div class="step-content">
+            <h2>Hizmet Seçimi</h2>
+            <div class="step-note">Lütfen hizmet seçin</div>
+            <div id="services" class="card-grid"></div>
+          </div>
+        </div>
+
+        <div class="step-block">
+          <div class="step-no">2</div>
+          <div class="step-content">
+            <h2>Personel Seçimi</h2>
+            <div class="step-note">Uygun personeli seçin</div>
+            <select id="barber"></select>
+          </div>
+        </div>
+
+        <div class="step-block">
+          <div class="step-no">3</div>
+          <div class="step-content">
+            <h2>Tarih Seçimi</h2>
+            <div class="date-wrap">
+              <input type="date" id="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="step-block">
+          <div class="step-no">4</div>
+          <div class="step-content">
+            <h2>Saat Seçimi</h2>
+            <div id="slots" class="slots"></div>
+            <div id="slotMessage" class="slot-message">Tarih, hizmet ve personel seçiniz.</div>
+          </div>
+        </div>
+
+        <div class="step-block">
+          <div class="step-no">5</div>
+          <div class="step-content">
+            <h2>Kişisel Bilgiler</h2>
+            <input type="text" id="name" placeholder="Ad Soyad" />
+            <input type="text" id="phone" placeholder="05xx xxx xx xx" />
+            <button id="createBtn" type="button">Gönder</button>
+            <div id="resultMessage" class="result-message"></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="summary-box">
+        <div class="summary-head">- Özet -</div>
+
+        <div class="summary-row">
+          <span>Salon</span>
+          <strong>Kendirli Hair Salon</strong>
+        </div>
+        <div class="summary-row">
+          <span>Hizmet</span>
+          <strong id="sum_service">-</strong>
+        </div>
+        <div class="summary-row">
+          <span>Personeller</span>
+          <strong id="sum_barber">-</strong>
+        </div>
+        <div class="summary-row">
+          <span>Tarih</span>
+          <strong id="sum_date">-</strong>
+        </div>
+        <div class="summary-row">
+          <span>Saat</span>
+          <strong id="sum_time">-</strong>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
